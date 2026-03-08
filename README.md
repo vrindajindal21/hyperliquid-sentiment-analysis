@@ -1,5 +1,32 @@
 # Hyperliquid Sentiment Trading Analysis
 
+## 🎯 Overview
+This project analyzes how **market sentiment (Fear vs Greed)** influences trader behavior and profitability on the Hyperliquid exchange.
+
+Using **211,224 trades across 32 accounts**, the analysis merges trader performance metrics with the **Bitcoin Fear & Greed Index** to uncover behavioral trading patterns and develop sentiment-based trading strategies.
+
+**The project includes:**
+- Sentiment performance analysis  
+- Trader behavioral segmentation  
+- Statistical significance testing  
+- Predictive modeling (Random Forest)  
+- Actionable trading strategies
+
+## 📁 Repository Structure
+```text
+hyperliquid-sentiment-analysis/
+│
+├── sentiment_trading_analysis.py       # Main analysis pipeline
+├── predictive_model.py                # ML models & clustering
+├── sentiment_analysis_notebook.ipynb  # Interactive demonstration
+├── historical_data.xlsx               # Hyperliquid trade data
+├── fear_greed_index.csv.xlsx          # Sentiment data
+├── sentiment_analysis.png              # Multi-panel visualization
+├── segment_analysis.png                # Segment-specific charts
+├── requirements.txt                   # Dependency list
+└── README.md                          # Project documentation
+```
+
 ## 📊 Dataset Summary
 - **211,224** trades analyzed  
 - **32** unique trader accounts  
