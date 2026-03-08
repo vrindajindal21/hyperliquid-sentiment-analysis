@@ -33,7 +33,16 @@ hyperliquid-sentiment-analysis/
 - **2,340** daily sentiment-aligned observations  
 - **Analysis period**: 2023–2025
 
+## ⚡ Key Results Snapshot
+- **Fear Alpha**: Fear days outperform Greed days by **25.1% average PnL**.
+- **Panic Liquidity**: Extreme Fear generates **2.1× higher trading volume** than Greed.
+- **Leverage Paradox**: Traders use **39.4% less leverage during Greed periods**.
+- **Behavioral Neutrality**: Winning traders maintain **balanced long/short positioning**.
+
 ## 📈 Key Visualization
+
+The chart below summarizes trader behavior and performance across different sentiment regimes.
+
 ![Sentiment Analysis Overview](sentiment_analysis.png)
 
 ## 📑 Project Summary (Deliverable Write-up)
@@ -104,20 +113,6 @@ Analyze how market sentiment (Fear/Greed) relates to trader behavior and perform
 > **"Increase trade frequency by 25% during Neutral sentiment for frequent traders"**
 - Rationale: Frequent traders achieve 36.7% win rates during Neutral periods
 - Expected impact: 15% improvement in overall profitability
-
-## Files Structure
-
-```
-./
-├── sentiment_trading_analysis.py      # Main analysis script
-├── sentiment_analysis_notebook.ipynb  # Interactive Jupyter notebook
-├── fear_greed_index.csv.xlsx          # Fear/Greed sentiment data
-├── historical_data.xlsx               # Hyperliquid trader data
-├── sentiment_analysis.png              # Main visualization charts
-├── segment_analysis.png                # Segment comparison charts
-├── predictive_model.py                 # Bonus predictive model
-└── README.md                          # This file
-```
 
 ## Setup and Installation
 
