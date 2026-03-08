@@ -57,6 +57,18 @@ The original analysis breaks down behavior across Extreme Fear, Fear, Neutral, G
 
 *Key Outcome: Identification of behavioral anomalies, such as peak volume during Extreme Fear and peak leverage during Greed.*
 
+### 🤖 Bonus: Trader Clustering & Predictive Modeling
+
+To further differentiate trader behavior, we implemented **K-Means Clustering** to segment accounts into behavioral archetypes. The optimal number of clusters (4) was determined using the **Elbow Method**.
+
+![Elbow Curve](elbow_curve.png)
+
+*The resulting 4 archetypes (Successful, High Risk, Active, and Conservative) allow for tailored sentiment-based strategy application.*
+
+![Trader Cluster Analysis](cluster_sentiment_analysis.png)
+
+*Key Outcome: "Successful Traders" exhibit the highest behavioral neutrality, effectively maintaining profitability across both Fear and Greed regimes.*
+
 ## 📑 Project Summary (Deliverable Write-up)
 
 ### 🛠️ Methodology
