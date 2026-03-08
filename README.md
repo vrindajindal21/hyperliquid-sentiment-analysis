@@ -1,5 +1,14 @@
 # Hyperliquid Sentiment Trading Analysis
 
+## 📊 Dataset Summary
+- **211,224** trades analyzed  
+- **32** unique trader accounts  
+- **2,340** daily sentiment-aligned observations  
+- **Analysis period**: 2023–2025
+
+## 📈 Key Visualization
+![Sentiment Analysis Overview](sentiment_analysis.png)
+
 ## 📑 Project Summary (Deliverable Write-up)
 
 ### 🛠️ Methodology
