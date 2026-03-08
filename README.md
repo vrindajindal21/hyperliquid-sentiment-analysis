@@ -42,6 +42,14 @@ hyperliquid-sentiment-analysis/
 └── README.md                          # Project documentation
 ```
 
+## 🧪 Reproducibility
+
+All results and visualizations in this repository can be fully reproduced by running:
+
+```bash
+python sentiment_trading_analysis.py
+```
+
 ## 📊 Dataset Summary
 - **211,224** trades analyzed  
 - **32** unique trader accounts  
@@ -49,7 +57,7 @@ hyperliquid-sentiment-analysis/
 - **Analysis period**: 2023–2025
 
 ## ⚡ Key Results Snapshot
-- **Fear Alpha**: Fear periods outperform Greed by **25.1% average PnL**.
+- **Fear Alpha**: Fear periods show **higher average PnL** (25.1%+) than Greed days, though the difference is not statistically significant (p=0.45).
 - **Panic Liquidity**: Extreme Fear generates **2.1× higher trading volume** than Greed.
 - **Leverage Paradox**: Traders use **39.4% less leverage during Greed periods**.
 - **Behavioral Neutrality**: Winning traders maintain **balanced long/short positioning**.
@@ -63,7 +71,7 @@ This "Enhanced" analysis focuses on the binary sentiment regime to identify majo
 
 ![Enhanced Sentiment Analysis](enhanced_sentiment_analysis.png)
 
-*Key Outcome: Distinct performance outperformance during Fear regimes ($5,185 avg PnL).*
+*Key Outcome: Higher average profitability during Fear regimes ($5,185 avg PnL), though not statistically significant due to account-level variance.*
 
 ### 2. Detailed Behavioral Analysis (5 Sentiment Classes)
 The original analysis breaks down behavior across Extreme Fear, Fear, Neutral, Greed, and Extreme Greed to uncover specific psychological triggers like the "Leverage Paradox" during market peaks.
@@ -104,8 +112,8 @@ Using a **Random Forest Regressor**, we model the structural relationship betwee
 5. **Modeling**: Developed a Random Forest classifier (0.956 ROC-AUC) for profitability signaling and K-Means for trader clustering.
 
 ### 🧠 Key Insights (Strength of Reasoning)
-- **The Fear Alpha**: Fear periods outperform Greed by **25.1%** in average daily PnL ($5,185 vs $4,144). 
-  - *Reasoning*: Fear creates structural contrarian opportunities as emotional liquidations lead to market mispricing and dip-buying potential.
+- **The Fear Alpha**: Fear periods show higher average daily PnL than Greed ($5,185 vs $4,144). 
+  - *Reasoning*: Fear creates structural contrarian opportunities though the high variance between individual accounts results in low statistical significance (p=0.45). This suggests "Fear Alpha" resides in specific high-performance clusters rather than the broad market.
 - **Leverage Paradox**: Traders use **39.4% LESS leverage** during Greed days.
   - *Reasoning*: This suggests an "Overconfidence Peak"—while traders are more active during Greed, they may be defensively positioned or "smart money" is already profit-taking, leading to lower net risk exposure compared to Fear-driven volatility spikes.
 - **Volume Correlation**: Extreme Fear drives 2.1x higher trading volume than Greed.
@@ -132,10 +140,10 @@ Analyze how market sentiment (Fear/Greed) relates to trader behavior and perform
 ## Key Findings
 
 ### Performance by Sentiment
-- **Fear days**: Highest average PnL ($5,185) - **outperforming Greed by 25.1%**
+- **Fear days**: Higher average PnL ($5,185) - **25.1% higher than Greed**
 - **Greed days**: Lower average PnL ($4,144) despite higher leverage
 - **Key Finding**: Fear days consistently outperform Greed days by $1,041 on average
-- **Statistical Significance**: 25.1% performance difference in favor of Fear
+- **Statistical Significance**: 25.1% difference in favor of Fear (p=0.45, not significant at 95% confidence).
 
 ### Behavioral Patterns
 - Traders use highest leverage during Greed days (leverage proxy: 63,393)
