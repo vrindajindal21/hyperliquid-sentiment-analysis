@@ -1,5 +1,24 @@
 # Hyperliquid Sentiment Trading Analysis
 
+## 📑 Project Summary (Deliverable Write-up)
+
+### 🛠️ Methodology
+1. **Data Prep**: Aggregated 211,224 Hyperliquid trades into account-level daily metrics (PnL, Volume, Win Rate, Leverage Proxy).
+2. **Alignment**: Merged trader metrics with Bitcoin Fear/Greed Index on synchronized timestamps (2,340 daily observations).
+3. **Statistical Analysis**: Comparative analysis using T-tests and boxplot distributions across sentiment regimes.
+4. **Modeling**: Developed a Random Forest classifier (0.956 ROC-AUC) for profitability signaling and K-Means for trader clustering.
+
+### 🧠 Key Insights
+- **Fear Alpha**: Fear periods outperform Greed by **25.1%** in average daily PnL ($5,185 vs $4,144).
+- **Leverage Paradox**: Traders use **39.4% LESS leverage** during Greed days, suggesting defensive bias during market peaks.
+- **Volume Correlation**: Extreme Fear drives 2.1x higher trading volume than Greed, fueled by emotional liquidations and dip-buying.
+- **Segment Variation**: "Successful" traders maintain balanced long/short ratios, while "High Risk" segments underperform during extreme sentiment.
+
+### 📈 Strategy Recommendations
+1. **Sentiment-Based Position Sizing**: Reduce exposure by 30% during Greed periods for high-leverage accounts to mitigate lower risk-adjusted returns.
+2. **Dynamic Long/Short Balance**: Maintain a balanced (45-55%) long ratio during extreme sentiment to reduce directional bias risk.
+3. **Fear-Period Opportunity Allocation**: Increase capital allocation by 25% during Fear periods for consistent performers to capitalize on structural profitability.
+
 ## Objective
 Analyze how market sentiment (Fear/Greed) relates to trader behavior and performance on Hyperliquid to uncover patterns that could inform smarter trading strategies.
 
