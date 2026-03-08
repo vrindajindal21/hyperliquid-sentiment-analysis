@@ -103,12 +103,6 @@ python sentiment_trading_analysis.py
 3. **Interactive analysis**:
 Open `sentiment_analysis_notebook.ipynb` in Jupyter Notebook or JupyterLab
 
-4. **Bonus Dashboard (Streamlit)**:
-Run the interactive dashboard to explore insights and ML signals:
-```bash
-streamlit run dashboard.py
-```
-
 ## Methodology
 
 ### Data Preparation
