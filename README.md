@@ -69,6 +69,14 @@ To further differentiate trader behavior, we implemented **K-Means Clustering** 
 
 *Key Outcome: "Successful Traders" exhibit the highest behavioral neutrality, effectively maintaining profitability across both Fear and Greed regimes.*
 
+### 📈 Predictive Modeling (PnL Prediction)
+
+Using a **Random Forest Regressor**, we model the structural relationship between sentiment, behavioral features (lagged PnL, leverage), and future profitability.
+
+![PnL Prediction Performance](pnl_prediction.png)
+
+*Key Outcome: The model achieves an R² of 0.48, successfully capturing the volatility and directional tendencies of trader performance based on market psychology.*
+
 ## 📑 Project Summary (Deliverable Write-up)
 
 ### 🛠️ Methodology
