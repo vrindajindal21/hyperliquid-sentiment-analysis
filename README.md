@@ -17,11 +17,15 @@
 3. **Statistical Analysis**: Comparative analysis using T-tests and boxplot distributions across sentiment regimes.
 4. **Modeling**: Developed a Random Forest classifier (0.956 ROC-AUC) for profitability signaling and K-Means for trader clustering.
 
-### 🧠 Key Insights
-- **Fear Alpha**: Fear periods outperform Greed by **25.1%** in average daily PnL ($5,185 vs $4,144).
-- **Leverage Paradox**: Traders use **39.4% LESS leverage** during Greed days, suggesting defensive bias during market peaks.
-- **Volume Correlation**: Extreme Fear drives 2.1x higher trading volume than Greed, fueled by emotional liquidations and dip-buying.
-- **Segment Variation**: "Successful" traders maintain balanced long/short ratios, while "High Risk" segments underperform during extreme sentiment.
+### 🧠 Key Insights (Strength of Reasoning)
+- **The Fear Alpha**: Fear periods outperform Greed by **25.1%** in average daily PnL ($5,185 vs $4,144). 
+  - *Reasoning*: Fear creates structural contrarian opportunities as emotional liquidations lead to market mispricing and dip-buying potential.
+- **Leverage Paradox**: Traders use **39.4% LESS leverage** during Greed days.
+  - *Reasoning*: This suggests an "Overconfidence Peak"—while traders are more active during Greed, they may be defensively positioned or "smart money" is already profit-taking, leading to lower net risk exposure compared to Fear-driven volatility spikes.
+- **Volume Correlation**: Extreme Fear drives 2.1x higher trading volume than Greed.
+  - *Reasoning*: Driven by "Panic Liquidity"—high-stress market environments force higher throughput as both forced liquidations and aggressive dip-buyers enter the market simultaneously.
+- **Segment Variation**: Winners maintain balanced long/short ratios, while losers show directional bias.
+  - *Reasoning*: Successful traders exhibit **Behavioral Neutrality**, prioritizing execution efficiency over emotional market directionality.
 
 ### 📈 Strategy Recommendations
 1. **Sentiment-Based Position Sizing**: Reduce exposure by 30% during Greed periods for high-leverage accounts to mitigate lower risk-adjusted returns.
