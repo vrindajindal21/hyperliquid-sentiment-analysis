@@ -34,24 +34,39 @@ hyperliquid-sentiment-analysis/
 - **Analysis period**: 2023–2025
 
 ## ⚡ Key Results Snapshot
-- **Fear Alpha**: Fear days outperform Greed days by **25.1% average PnL**.
+- **Fear Alpha**: Fear periods outperform Greed by **25.1% average PnL**.
 - **Panic Liquidity**: Extreme Fear generates **2.1× higher trading volume** than Greed.
 - **Leverage Paradox**: Traders use **39.4% less leverage during Greed periods**.
 - **Behavioral Neutrality**: Winning traders maintain **balanced long/short positioning**.
 
-## 📈 Key Visualization
+## 📈 Analysis Comparisons
 
-The chart below summarizes trader behavior and performance across different sentiment regimes.
+We analyzed market sentiment at two levels of granularity to capture both broad performance trends and specific behavioral nuances.
 
-![Sentiment Analysis Overview](sentiment_analysis.png)
+### 1. Summary Analysis (Fear vs. Greed)
+This "Enhanced" analysis focuses on the binary sentiment regime to identify major structural differences in market performance. We use statistical T-tests to validate these findings.
+
+![Enhanced Sentiment Analysis](enhanced_sentiment_analysis.png)
+
+*Key Outcome: Distinct performance outperformance during Fear regimes ($5,185 avg PnL).*
+
+### 2. Detailed Behavioral Analysis (5 Sentiment Classes)
+The original analysis breaks down behavior across Extreme Fear, Fear, Neutral, Greed, and Extreme Greed to uncover specific psychological triggers like the "Leverage Paradox" during market peaks.
+
+![Detailed Sentiment Analysis](sentiment_analysis.png)
+
+*Key Outcome: Identification of behavioral anomalies, such as peak volume during Extreme Fear and peak leverage during Greed.*
 
 ## 📑 Project Summary (Deliverable Write-up)
 
 ### 🛠️ Methodology
 1. **Data Prep**: Aggregated 211,224 Hyperliquid trades into account-level daily metrics (PnL, Volume, Win Rate, Leverage Proxy).
 2. **Alignment**: Merged trader metrics with Bitcoin Fear/Greed Index on synchronized timestamps (2,340 daily observations).
-3. **Statistical Analysis**: Comparative analysis using T-tests and boxplot distributions across sentiment regimes.
-4. **Modeling**: Developed a Random Forest classifier (0.956 ROC-AUC) for profitability signaling and K-Means for trader clustering.
+3. **Multi-Class vs Binary Mapping**: 
+   - **5-Class Analysis**: Maps trader metrics to the original 5 sentiment categories for behavioral depth.
+   - **2-Class (Enhanced) Analysis**: Consolidated into Fear vs Greed for high-level performance comparison and statistical validation.
+4. **Statistical Analysis**: Comparative analysis using T-tests across binary sentiment regimes.
+5. **Modeling**: Developed a Random Forest classifier (0.956 ROC-AUC) for profitability signaling and K-Means for trader clustering.
 
 ### 🧠 Key Insights (Strength of Reasoning)
 - **The Fear Alpha**: Fear periods outperform Greed by **25.1%** in average daily PnL ($5,185 vs $4,144). 
