@@ -12,6 +12,21 @@ Using **211,224 trades across 32 accounts**, the analysis merges trader performa
 - Predictive modeling (Random Forest)  
 - Actionable trading strategies
 
+## 🚀 30-Second Quick Start
+Clone the repository and run the main analysis:
+
+```bash
+git clone https://github.com/vrindajindal21/hyperliquid-sentiment-analysis
+cd hyperliquid-sentiment-analysis
+pip install -r requirements.txt
+python sentiment_trading_analysis.py
+```
+
+**This will:**
+- Process **211,224 Hyperliquid trades**
+- Merge them with **Bitcoin Fear & Greed sentiment data**
+- Generate **sentiment performance insights** and **visualizations**
+
 ## 📁 Repository Structure
 ```text
 hyperliquid-sentiment-analysis/
